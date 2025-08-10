@@ -54,7 +54,12 @@ const Navbar = () => {
           }}
           aria-label="HopSafe"
         >
-          <span className="text-xl font-medium text-gray-900">HopSafe</span>
+          <img 
+            src="/trans for website.png" 
+            alt="HopSafe Logo" 
+            className="h-20 w-auto mr-2"
+          />
+          <span className="text-2xl font-bold" style={{ color: '#FF7D01' }}>HopSafe</span>
         </a>
 
         {/* Desktop Navigation */}
