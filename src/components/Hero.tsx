@@ -10,6 +10,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import WaitingListForm from "./WaitingListForm";
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -125,29 +126,10 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Coming Soon Dialog */}
+      {/* Waiting List Form Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-md">
-          <DialogHeader>
-            <DialogTitle className="text-center text-2xl font-bold text-gray-900">
-              Coming Soon! 🚌
-            </DialogTitle>
-            <DialogDescription className="text-center text-gray-600 mt-4">
-              We're working hard to bring HopSafe to your community. 
-              Our real-time bus tracking system is currently in development.
-              <br /><br />
-              Stay tuned for updates and be among the first to experience 
-              safer, more transparent school transportation.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="flex justify-center mt-6">
-            <button
-              onClick={() => setIsDialogOpen(false)}
-              className="px-6 py-2 bg-pulse-500 text-white rounded-full hover:bg-pulse-600 transition-colors duration-200"
-            >
-              Got it!
-            </button>
-          </div>
+        <DialogContent className="sm:max-w-lg">
+          <WaitingListForm onClose={() => setIsDialogOpen(false)} />
         </DialogContent>
       </Dialog>
     </>
