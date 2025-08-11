@@ -29,10 +29,10 @@ const Footer = () => {
               </svg>
               <span className="text-gray-600">E-Mail:</span>
               <a 
-                href="mailto:projectwhonnock@gmail.com" 
+                href="mailto:connect@hopsafe.in" 
                 className="text-primary hover:text-primary/80 font-medium transition-colors duration-300"
               >
-                projectwhonnock@gmail.com
+                connect@hopsafe.in
               </a>
             </div>
           </div>
